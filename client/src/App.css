@@ -1,0 +1,1723 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Gowun+Dodum&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap");
+@import url("../src/cssComponent/Quickview.css");
+@import url("../src/cssComponent/shopingcart.css");
+@import url("../src/cssComponent/shopnowcarousel.css");
+@import url("../src/cssComponent/ShoppingcartEmpty.css");
+@import url("../src/cssComponent/Signup.css");
+@import url("../src/cssComponent/componentpage.css");
+
+.App {
+  background-color: #454545;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.squareborder {
+  width: 100%;
+  height: 1.5vh;
+  background-color: white;
+}
+.shopnowstyle {
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 4vh;
+  width: 100%;
+  text-align: center;
+}
+.triangle {
+  width: 100%;
+  height: 400px;
+  background: white;
+  clip-path: polygon(46% 0%, 50% 8%, 54% 0%);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  margin-top: -1px;
+}
+
+.backgroundimage {
+  width: 100%;
+  height: 100%;
+}
+.photosize {
+  width: 100%;
+  height: 0%;
+  background-color: transparent;
+  top: 0;
+  display: block;
+}
+
+/* "navbar" changed to navbar1 to not override tailwind */
+
+.navbar1 {
+  transition: background-color 1s;
+  position: fixed;
+  position: -webkit-sticky;
+  height: 70px;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: transparent;
+
+  text-align: center;
+
+  justify-content: center;
+}
+.navbar1-color {
+  transition: background-color 1s;
+  background-color: rgb(39, 39, 39);
+}
+
+#accounticon {
+  display: inline-block;
+  position: relative;
+}
+#shopingcart {
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+  .navbar1 {
+    width: 100%;
+  }
+  #accounticon {
+    display: none;
+  }
+}
+
+.backphotos {
+  width: 100%;
+  height: 50%;
+}
+.backphotossize {
+  width: 100%;
+  height: 50%;
+  top: 0;
+  z-index: 3;
+  animation: 3s fadeIn;
+}
+.Websitename {
+  color: rgb(255, 255, 255);
+  font-size: 5vh;
+  font-weight: 400;
+  position: absolute;
+  font-family: "Lora", serif;
+  text-shadow: 1px 1px #424141;
+  margin-left: 10px;
+  transition: 1s;
+}
+.hatdiv {
+  margin-top: 3%;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.hatdiv img {
+  object-position: 25% 30%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fontstyle {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  right: 0;
+  margin-left: 5.5%;
+  letter-spacing: -1px;
+  display: inline-block;
+  position: relative;
+  margin-right: 2%;
+}
+.fontstyleline {
+  background-color: rgb(127, 127, 127);
+  width: 70%;
+  height: 1.5px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+}
+@media only screen and (max-width: 980px) {
+  .fontstyleline {
+    width: 65%;
+  }
+  .fontstyle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .fontstyleline {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .productsmaller {
+    display: none;
+  }
+}
+
+.arrowsright1 {
+  position: relative;
+  width: 5%;
+  height: 5%;
+  margin-right: -4%;
+  margin-left: -1%;
+  margin-top: -660px;
+}
+.arrowbuttonright {
+  width: 3%;
+  height: 30vh;
+  position: relative;
+  display: inline-block;
+  top: -35vh;
+}
+.arrowbuttonleft {
+  width: 3%;
+  height: 30vh;
+  position: relative;
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: -6%;
+  top: -35vh;
+}
+.arrowsright {
+  position: relative;
+  width: 9vh;
+  height: 10vh;
+}
+.arrowsleft {
+  position: relative;
+  width: 9vh;
+  height: 10vh;
+}
+#leftarrrow {
+  margin-right: -10%;
+}
+#rightarrow {
+  margin-left: -1.5%;
+}
+
+.collageback {
+  background-color: #222121;
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  margin-bottom: 2%;
+  box-shadow: 2px 1px 7px #222121;
+}
+.Newcollecttext {
+  color: white;
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 4vh;
+}
+.collectioname {
+  color: white;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 7vh;
+  margin-top: -1%;
+}
+#collectionline {
+  background-color: rgb(61, 60, 60);
+  width: 60%;
+  height: 2.5px;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+.descriptioncoll {
+  font-family: "Mate SC", serif;
+  color: white;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-size: 2vh;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.group1div {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.group2div {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.group1photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 5%;
+}
+.fontstyle2 {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  margin-left: 5.5%;
+  letter-spacing: -1px;
+  display: inline-block;
+  position: relative;
+  margin-right: 1%;
+}
+.fontstyle1 {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  right: 0;
+  margin-left: 9.5%;
+  letter-spacing: -1px;
+  position: relative;
+  margin-top: -10px;
+}
+.fontstyleline2 {
+  background-color: rgb(127, 127, 127);
+  width: 78%;
+  height: 1.5px;
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .arrowsright {
+    margin-top: -450px;
+    width: 5%;
+    height: 5%;
+  }
+  .arrowsright1 {
+    width: 4%;
+    height: 4%;
+    margin-top: -550px;
+  }
+
+  #leftarrrow {
+    margin-left: 0%;
+    margin-right: -4%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .descriptioncoll {
+    width: 80%;
+    right: 10%;
+  }
+  #collectionline {
+    width: 80%;
+    right: 10%;
+  }
+  .fontstyle2 {
+    font-size: 30px;
+  }
+  .fontstyle1 {
+    font-size: 30px;
+  }
+}
+.fullscreenmenu {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+.fullscreenmenucart {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+.fullscreenmenucart.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fullscreenmenucart.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.productimagediv {
+  width: 9vw;
+  height: 9vw;
+  border: 2px solid white;
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5vw;
+}
+
+.productnametext {
+  color: white;
+  font-family: "Forum", serif;
+  font-size: 2vw;
+}
+.productpricetext {
+  font-family: "Gowun Dodum", sans-serif;
+  color: rgb(178, 178, 178);
+}
+
+.productstextdiv {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  top: -22%;
+}
+.productfulldiv {
+  position: relative;
+  width: 100%;
+  height: 10vw;
+  animation: 4s fadeIn;
+}
+
+.productimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#CheckoutButton:hover {
+  color: #aaa9a9;
+  background-color: #252525;
+}
+.buttondivs {
+  width: 100%;
+  position: relative;
+  margin-top: 2%;
+}
+
+.halfscreen {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  animation: halfslide 1s;
+}
+@keyframes halfslide {
+  0% {
+    width: 85%;
+    height: 100%;
+  }
+  100% {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.fullscreenmenu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.fullscreenmenu.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar {
+  z-index: 40;
+  width: 20%;
+  height: 100%;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  background-color: #1b1b1b;
+  animation: 1s slidenav;
+}
+
+@keyframes slidenav {
+  0% {
+    width: 15%;
+    height: 100%;
+  }
+  100% {
+    width: 20%;
+    height: 100%;
+  }
+}
+.contentdiv {
+  margin-top: 10%;
+}
+.navbarcontent {
+  width: 100%;
+  text-align: right;
+  animation: 3s fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbarcontent svg {
+  position: relative;
+  display: inline-block;
+  width: 4vh;
+  height: 4vh;
+}
+.navbarcontent:hover svg {
+  stroke: white;
+  transition: 0.5s;
+}
+.navbarcontent h1 {
+  color: rgb(161, 160, 160);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 3%;
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  margin-right: 13%;
+  padding: 10px;
+}
+.navbarcontent h1:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.navbarcontent:hover {
+  border-color: #282727;
+  background-color: #282727;
+  transition: 0.5s;
+  color: white;
+}
+.slick-next {
+  background: url("../src/images/rightarrow.png") center center no-repeat !important;
+  width: 5% !important;
+  height: 40% !important;
+  &::before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  background: url("../src/images/leftarrow.png") center center no-repeat !important;
+  width: 5% !important;
+  height: 40% !important;
+  &::before {
+    display: none;
+  }
+}
+#usernamediv {
+  width: 100%;
+  height: 12vh;
+  text-align: right;
+  animation: 4s fadeIn;
+}
+#usernamediv h1 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  position: relative;
+  font-size: 2.5vh;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+#usernamediv svg {
+  position: relative;
+  display: inline-block;
+  height: 7vh;
+  width: 10vh;
+  float: right;
+  margin-right: 20px;
+}
+.loginbutton {
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+  position: relative;
+  animation: 3s fadeIn;
+}
+.loginbuttonstyle {
+  height: 40px;
+  width: 15vh;
+  color: rgb(139, 138, 138);
+  font-family: "DM Sans", sans-serif;
+  background-color: #252525;
+  border-radius: 20px;
+  float: right;
+  margin-right: 30px;
+}
+.loginbuttonstyle:hover {
+  color: white;
+  background-color: #454545;
+  transition: 0.5s;
+}
+.productbordersize {
+  margin-left: 5%;
+  width: 90%;
+  display: inline-block;
+  position: relative;
+}
+.collagetextdiv {
+  margin-bottom: 10px;
+  position: relative;
+  height: 50%;
+  margin: auto;
+}
+.photoscollagediv {
+  width: 100%;
+  position: absolute;
+  height: 75%;
+  bottom: 0;
+}
+.productsmallerdiv {
+  margin-left: 6%;
+  width: 88%;
+  position: relative;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) and (max-height: 800px) {
+  .sidebar {
+    width: 25%;
+
+    animation: 1s slidenav;
+  }
+  @keyframes slidenav {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 25%;
+      height: 100%;
+    }
+  }
+  /* .cartsidebar {
+    width: 40%;
+    animation: 1s slidenavcart;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 30%;
+      height: 100%;
+    }
+  } */
+
+  /* .halfscreencart {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 70%;
+      height: 100%;
+    }} */
+
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 3s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .halfscreen {
+    width: 75%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 75%;
+      height: 100%;
+    }
+  }
+  .navbarcontent svg {
+    width: 3.5vh;
+    height: 3.5vh;
+  }
+  .navbarcontent h1 {
+    font-size: 18px;
+  }
+  .loginbuttonstyle {
+    height: 35px;
+    width: 14vh;
+  }
+
+  #usernamediv svg {
+    height: 7vh;
+    width: 9vh;
+  }
+  #usernamediv h1 {
+    margin-top: 11px;
+  }
+
+  .triangle {
+    clip-path: polygon(46% 0%, 50% 7%, 54% 0%);
+  }
+  .squareborder {
+    height: 10px;
+  }
+  .Websitename {
+    font-size: 6vh;
+  }
+  #shopingcart {
+    height: 4vw;
+    width: 3vw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 7px;
+  }
+  #menuicon {
+    height: 4vw;
+    width: 4vw;
+  }
+  #menuicon svg {
+    height: 4vw;
+    width: 4.5vw;
+    margin-left: -7px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 40vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .Websitename {
+    font-size: 6.5vh;
+  }
+  .productsmallerdiv {
+    margin-left: 6%;
+    width: 88%;
+    position: relative;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px) and (max-height: 2000px) and (min-height: 700px) {
+  .Websitename {
+    font-size: 4.5vh;
+  }
+  /* .cartsidebar {
+    width: 40%;
+    animation: 1s slidenavcart;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+
+  .halfscreencart {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  } */
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
+  .sidebar {
+    width: 35%;
+
+    animation: 1s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 30%;
+      height: 100%;
+    }
+    100% {
+      width: 35%;
+      height: 100%;
+    }
+  }
+
+  .halfscreen {
+    width: 65%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 70%;
+      height: 100%;
+    }
+    100% {
+      width: 65%;
+      height: 100%;
+    }
+  }
+  #usernamediv svg {
+    height: 6vh;
+    width: 8vh;
+  }
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 3s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navbarcontent svg {
+    width: 3vh;
+    height: 3vh;
+  }
+  .navbarcontent h1 {
+    font-size: 3vw;
+    width: 20vw;
+  }
+  #usernamediv h1 {
+    font-size: 2vh;
+    margin-top: 20px;
+  }
+  #usernamediv {
+    height: 15vw;
+  }
+  .Websitename {
+    font-size: 3.5vh;
+  }
+  .loginbuttonstyle {
+    height: 4vh;
+    width: 12vh;
+    font-size: 2.9vw;
+  }
+  .triangle {
+    clip-path: polygon(46% 0%, 50% 6%, 54% 0%);
+  }
+  .squareborder {
+    height: 7px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -5%;
+    margin-bottom: 3%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .sidebar {
+    width: 30%;
+    animation: 1s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 19%;
+      height: 100%;
+    }
+    100% {
+      width: 30%;
+      height: 100%;
+    }
+  }
+  /* .cartsidebar {
+    width: 40%;
+    animation: 1s slidenavcart;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+
+  .halfscreencart {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .halfscreen {
+    width: 70%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 81%;
+      height: 100%;
+    }
+    100% {
+      width: 70%;
+      height: 100%;
+    }
+  } */
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 3s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navbarcontent svg {
+    width: 4.2vh;
+    height: 4.2vh;
+    transition: 0.5s;
+  }
+  .navbarcontent h1 {
+    font-size: 16px;
+    width: 60%;
+    transition: 0.5s;
+  }
+
+  #usernamediv svg {
+    height: 9vw;
+    width: 7vw;
+  }
+  #usernamediv h1 {
+    margin-top: 17px;
+    font-size: 16px;
+  }
+  #usernamediv {
+    height: 14vw;
+  }
+
+  .loginbuttonstyle {
+    height: 40px;
+    width: 10vh;
+    font-size: 1.5vw;
+  }
+  .Websitename {
+    font-size: 5vh;
+  }
+  #shopingcart {
+    height: 5vw;
+    width: 4fvw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 5px;
+  }
+  #menuicon {
+    height: 5vw;
+    width: 4vw;
+  }
+  #menuicon svg {
+    height: 6vw;
+    width: 5.5vw;
+    margin-left: -7px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 40vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .slick-next {
+    background: url("../src/images/rightarrow.png") center center no-repeat !important;
+    background-size: 30px 30px !important;
+    width: 5% !important;
+    height: 10% !important;
+    margin-right: -10px !important;
+  }
+
+  .slick-prev {
+    background: url("../src/images/leftarrow.png") center center no-repeat !important;
+    background-size: 30px 30px !important;
+    width: 5% !important;
+    height: 10% !important;
+    margin-left: -10px !important;
+    &::before {
+      display: none;
+    }
+  }
+  .fontstyle2 {
+    font-size: 5vw;
+    margin-right: 2%;
+  }
+  .fontstyle1 {
+    font-size: 5vw;
+
+    margin-left: 9.5%;
+
+    margin-top: -5px;
+  }
+  .fontstyleline2 {
+    width: 78%;
+    height: 1px;
+    margin-bottom: -2px;
+  }
+  .cartendbuttonstyle {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1200) {
+  .sidebar {
+    width: 30%;
+
+    animation: 2s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 28%;
+      height: 100%;
+    }
+    100% {
+      width: 30%;
+      height: 100%;
+    }
+  }
+
+  .halfscreen {
+    width: 72%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 70%;
+      height: 100%;
+    }
+    100% {
+      width: 70%;
+      height: 100%;
+    }
+  }
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 3s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navbarcontent svg {
+    width: 2vh;
+    height: 2vh;
+  }
+  .navbarcontent h1 {
+    font-size: 1.7vw;
+    width: 60%;
+  }
+
+  #usernamediv svg {
+    height: 5vw;
+    width: 7vw;
+  }
+  #usernamediv h1 {
+    margin-top: 1vw;
+    font-size: 2vw;
+  }
+  #usernamediv {
+    height: 10vw;
+  }
+
+  .loginbuttonstyle {
+    height: 45px;
+    width: 12vh;
+    font-size: 1.2vw;
+  }
+  .shopnowstyle {
+    font-size: 3vw;
+  }
+  .catcontainer {
+    height: 65vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 15px;
+  }
+  .bordersborder1 {
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  .Websitename {
+    font-size: 4.5vh;
+    margin-right: 20px;
+  }
+  #shopingcart {
+    height: 5vw;
+    width: 4vw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 5px;
+  }
+  #menuicon {
+    height: 5vw;
+    width: 4vw;
+  }
+  #menuicon svg {
+    height: 5vw;
+    width: 5.5vw;
+    margin-left: -7px;
+  }
+  .productsmallerdiv {
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .sidebar {
+    width: 40%;
+
+    animation: 1s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 5%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+
+  .halfscreen {
+    width: 60%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 95%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 3s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navbarcontent svg {
+    width: 3.5vh;
+    height: 3.5vh;
+  }
+  .navbarcontent h1 {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  #usernamediv svg {
+    height: 11vw;
+    width: 9vw;
+  }
+  #accounticon {
+    display: none;
+  }
+  #usernamediv h1 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  #usernamediv {
+    height: 18vw;
+  }
+
+  .loginbuttonstyle {
+    height: 40px;
+    width: 11vh;
+    font-size: 2.4vw;
+  }
+  .triangle {
+    clip-path: polygon(46% 0%, 50% 4%, 54% 0%);
+  }
+  .squareborder {
+    height: 6px;
+  }
+  .shopnowstyle {
+    font-size: 4vw;
+  }
+  .catcontainer {
+    height: 25vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -5%;
+    margin-bottom: 3%;
+  }
+  .fontstyle {
+    font-size: 20px;
+
+    margin-right: 2%;
+  }
+  .fontstyleline {
+    width: 65%;
+    height: 1px;
+
+    top: -6px;
+  }
+  .slick-next {
+    background-size: 20px 25px !important;
+  }
+  .slick-prev {
+    background-size: 20px 25px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .sidebar {
+    width: 65%;
+
+    animation: 1s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 30%;
+      height: 100%;
+    }
+    100% {
+      width: 65%;
+      height: 100%;
+    }
+  }
+  .navbarcontent {
+    width: 100%;
+    text-align: right;
+    animation: 5s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    96% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .cartendbuttonstyle {
+    font-size: 2.5vw;
+  }
+
+  .navbarcontentendcart {
+    height: 10vw;
+  }
+  .cartsidebarEmpty {
+    width: 60%;
+    animation: 1s slidenavcart;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  */ #accounticon {
+    display: none;
+  }
+  /* .halfscreencart {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  } */
+  .halfscreen {
+    width: 35%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 70%;
+      height: 100%;
+    }
+    100% {
+      width: 35%;
+      height: 100%;
+    }
+  }
+  .navbarcontent svg {
+    width: 3.5vh;
+    height: 3.6vh;
+  }
+  .navbarcontent h1 {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  #usernamediv svg {
+    height: 14vw;
+    width: 10vw;
+  }
+  #usernamediv h1 {
+    margin-top: 16px;
+    font-size: 17px;
+  }
+  #usernamediv {
+    height: 18vw;
+  }
+
+  .loginbuttonstyle {
+    height: 40px;
+    width: 11vh;
+    font-size: 3vw;
+  }
+  .Websitename {
+    font-size: 3.5vh;
+  }
+  #shopingcart {
+    height: 8vw;
+    width: 7vw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 2px;
+  }
+  #menuicon {
+    height: 8vw;
+    width: 7vw;
+  }
+  #menuicon svg {
+    height: 9vw;
+    width: 10vw;
+    margin-left: -7px;
+  }
+  .triangle {
+    clip-path: polygon(46% 0%, 50% 3%, 54% 0%);
+  }
+  .squareborder {
+    height: 5px;
+  }
+  .shopnowstyle {
+    font-size: 3.5vw;
+  }
+  .catcontainer {
+    height: 20vh;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -3%;
+    margin-bottom: 3%;
+  }
+  .productbordersize {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .fontstyle {
+    font-size: 15px;
+
+    margin-right: 2%;
+  }
+  .fontstyleline {
+    width: 65%;
+    height: 0.5px;
+    top: -6px;
+  }
+  .Newcollecttext {
+    font-size: 2.5vh;
+    margin-top: 10px;
+  }
+  .collectioname {
+    font-size: 4.6vh;
+    margin-top: -1%;
+  }
+  #collectionline {
+    height: 1.7px;
+    margin-left: 20%;
+  }
+  .descriptioncoll {
+    font-size: 1.2vh;
+  }
+  .collageback {
+    height: 80vh;
+  }
+  .slick-next {
+    background-size: 20px 25px !important;
+    margin-top: -20px !important;
+  }
+  .slick-prev {
+    background-size: 20px 25px !important;
+    margin-top: -20px !important;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .sidebar {
+    width: 60%;
+
+    animation: 1s slidenav;
+  }
+
+  @keyframes slidenav {
+    0% {
+      width: 30%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .cartendbuttonstyle {
+    font-size: 2.5vw;
+  }
+
+  .navbarcontentendcart {
+    height: 10vw;
+  }
+  /*
+  .cartsidebar {
+    width: 70%;
+    animation: 1s slidenavcart;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 15%;
+      height: 100%;
+    }
+    100% {
+      width: 70%;
+      height: 100%;
+    }
+  } */
+  #accounticon {
+    display: none;
+  }
+  /* .halfscreencart {
+    width: 30%;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 85%;
+      height: 100%;
+    }
+    100% {
+      width: 30%;
+      height: 100%;
+    }
+  } */
+  .navbarcontent {
+    width: 100%;
+    animation: 2s fadeIn;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .halfscreen {
+    width: 40%;
+    animation: halfslide 1s;
+  }
+  @keyframes halfslide {
+    0% {
+      width: 70%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+  .navbarcontent svg {
+    width: 3.5vh;
+    height: 3.5vh;
+  }
+  .navbarcontent h1 {
+    font-size: 14px;
+    width: 60%;
+  }
+  .navbarcontentendcart {
+    height: 13vw;
+  }
+
+  #usernamediv svg {
+    height: 14vw;
+    width: 12vw;
+  }
+  #usernamediv h1 {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  #usernamediv {
+    height: 18vw;
+  }
+
+  .loginbuttonstyle {
+    height: 40px;
+    width: 11vh;
+    font-size: 2.7vw;
+  }
+  .triangle {
+    clip-path: polygon(46% 0%, 50% 2%, 54% 0%);
+  }
+  .squareborder {
+    height: 3px;
+  }
+  .shopnowstyle {
+    font-size: 3vw;
+  }
+  .catcontainer {
+    height: 25vh;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+  .catphotos h1 {
+    font-size: 10px;
+  }
+  .bordersborder1 {
+    margin-top: -4%;
+    margin-bottom: 3%;
+  }
+  #shopingcart {
+    height: 7vw;
+    width: 6vw;
+    text-align: center;
+  }
+  #shopingcart svg {
+    margin-top: 2px;
+  }
+  #menuicon {
+    height: 8vw;
+    width: 7vw;
+  }
+  #menuicon svg {
+    height: 8vw;
+    width: 7vw;
+    margin-left: -7px;
+  }
+  .fontstyle {
+    font-size: 15px;
+
+    margin-right: 2%;
+    letter-spacing: 0.4px;
+  }
+  .fontstyleline {
+    width: 62%;
+    height: 0.5px;
+    top: -6px;
+  }
+  .slick-next {
+    background-size: 20px 25px !important;
+    margin-right: 6px !important;
+  }
+  .slick-prev {
+    background-size: 20px 25px !important;
+    margin-left: 6px !important;
+  }
+  .Newcollecttext {
+    font-size: 2.7vh;
+    margin-top: 10px;
+  }
+  .collectioname {
+    font-size: 4.8vh;
+    margin-top: -1%;
+  }
+  #collectionline {
+    height: 1.4px;
+    margin-left: 20%;
+  }
+  .descriptioncoll {
+    font-size: 1.2vh;
+    width: 100%;
+  }
+}

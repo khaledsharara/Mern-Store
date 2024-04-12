@@ -1,0 +1,232 @@
+.cartsidebarEmpty {
+  z-index: 40;
+  width: 30%;
+  height: 100%;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  background-color: #1b1b1b;
+  animation: 1s slidenavcart;
+}
+@keyframes slidenavcart {
+  0% {
+    width: 20%;
+    height: 100%;
+  }
+  100% {
+    width: 30%;
+    height: 100%;
+  }
+}
+.halfscreencartEmpty {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  animation: halfslidecart 1s;
+}
+@keyframes halfslidecart {
+  0% {
+    width: 80%;
+    height: 100%;
+  }
+  100% {
+    width: 70%;
+    height: 100%;
+  }
+}
+.contentdivcartEmpty {
+  margin-top: 0;
+}
+#usernamedivcartEmpty {
+  width: 100%;
+  height: 6vw;
+  top: 0;
+  position: relative;
+  text-align: center;
+  animation: 4s fadeIn;
+}
+#usernamedivcartEmpty h1 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 250;
+  font-optical-sizing: auto;
+  position: relative;
+  font-size: 3vh;
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5px;
+}
+.navbarcontentendcart {
+  width: 100%;
+  height: 6vw;
+  text-align: right;
+  background-color: #282727;
+  animation: 3s fadeIn;
+  position: absolute;
+  bottom: 0;
+}
+#usernamedivcartEmpty svg {
+  position: relative;
+  display: inline-block;
+  height: 4vh;
+  width: 4vh;
+  margin-right: 10px;
+  top: -4px;
+}
+
+.shopchartlineEmpty {
+  position: relative;
+  width: 90%;
+  height: 0.12vw;
+  background-color: #4c4c4c;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.cartendbuttonstyle {
+  color: #908f8f;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-family: "DM Sans", sans-serif;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 830px) {
+  .cartsidebarEmpty {
+    width: 40%;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 20%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+  .halfscreencartEmpty {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 80%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .cartendbuttonstyle {
+    font-size: 1.4vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cartsidebarEmpty {
+    width: 60%;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 20%;
+      height: 100%;
+    }
+    100% {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  .halfscreencartEmpty {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 80%;
+      height: 100%;
+    }
+    100% {
+      width: 40%;
+      height: 100%;
+    }
+  }
+  .cartendbuttonstyle {
+    font-size: 2vw;
+  }
+  .navbarcontentendcart {
+    height: 10vw;
+  }
+  #usernamedivcartEmpty h1 {
+    font-size: 2.7vh;
+  }
+  #usernamedivcartEmpty svg {
+    height: 3.5vh;
+    width: 3.5vh;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .cartsidebarEmpty {
+    width: 65%;
+  }
+  @keyframes slidenavcart {
+    0% {
+      width: 20%;
+      height: 100%;
+    }
+    100% {
+      width: 65%;
+      height: 100%;
+    }
+  }
+  .halfscreencartEmpty {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    animation: halfslidecart 1s;
+  }
+  @keyframes halfslidecart {
+    0% {
+      width: 80%;
+      height: 100%;
+    }
+    100% {
+      width: 35%;
+      height: 100%;
+    }
+  }
+  .cartendbuttonstyle {
+    font-size: 2.8vw;
+  }
+  .navbarcontentendcart {
+    height: 14vw;
+  }
+  #usernamedivcartEmpty h1 {
+    font-size: 2.3vh;
+  }
+  #usernamedivcartEmpty svg {
+    height: 3vh;
+    width: 3vh;
+    top: -2px;
+  }
+}

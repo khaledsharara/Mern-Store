@@ -1,0 +1,318 @@
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Koulen&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Koulen&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Peddana&display=swap");
+.Photo1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  object-position: 10% 30%;
+}
+.PhotoDiv {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: fadeIn 2s;
+}
+
+.producttext {
+  color: white;
+  font-size: 25px;
+  font-family: Forum, serif;
+  font-weight: 400;
+}
+.heartlist {
+  width: 4vh;
+  height: 4vh;
+  display: inline-block;
+  float: right;
+  position: relative;
+  margin-top: 4px;
+  fill: none;
+  -webkit-appearance: none;
+  background: url("../images/unfilledheart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.heartlist:checked {
+  background: url("../images/filledheart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.pricetext {
+  font-family: Gowun Dodum, sans-serif;
+  font-weight: 400px;
+  color: rgb(158, 155, 155);
+  font-size: 15px;
+  margin-top: -5px;
+}
+.Photo1smaller {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  object-position: 10% 30%;
+  transition: 0.5s;
+}
+.Photo1smaller:hover {
+  transition: 0.5s;
+}
+
+.quickview {
+  color: white;
+  z-index: 100px;
+  position: absolute;
+  background-color: black;
+  padding: 1.2% 10% 1.2% 10%;
+  border-radius: 50px;
+  left: 30%;
+  bottom: 2%;
+  font-family: "Peddana", serif;
+  font-size: 1.8vw;
+  display: none;
+}
+.quickview:hover {
+  background-color: rgb(58, 58, 58);
+}
+.PhotoDivsmaller {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: fadeIn 2s;
+}
+.PhotoDivsmaller:hover .quickview {
+  transition: 0.3s;
+  display: block;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fulldivphoto {
+  width: 95%;
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5%;
+}
+.smallerdiv {
+  width: 100%;
+  height: 70vh;
+}
+
+@media only screen and (max-width: 1500px) {
+  .fulldivphoto {
+    width: 100;
+  }
+  .smallerdiv {
+    height: 50vh;
+  }
+  .producttext {
+    font-size: 20px;
+  }
+  .pricetext {
+    font-size: 13px;
+  }
+  .heartlist {
+    width: 3vh;
+    height: 3vh;
+  }
+}
+
+.footerdiv {
+  width: 100%;
+  height: 55vh;
+  background-color: #181818;
+  position: relative;
+  text-align: center;
+}
+.footerdiv svg:hover g {
+  fill: white;
+  transition: 0.5s;
+}
+.Websitenamefooter {
+  color: rgb(133, 133, 133);
+  font-family: Koulen, sans-serif;
+  font-weight: 400;
+  font-size: 300%;
+  padding-top: 3%;
+}
+.footerlist li {
+  color: #565656;
+  width: 5%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-family: Karla, sans-serif;
+  margin-left: 0px;
+}
+.footerlist li:hover {
+  color: white;
+  transition: 0.5s;
+}
+.footerline {
+  width: 40%;
+  height: 1px;
+  background-color: rgb(133, 133, 133);
+  margin-top: 2%;
+  position: relative;
+  left: 30%;
+}
+.copyrightfooter {
+  color: #6b6b6b;
+  font-family: Khula, sans-serif;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.footerfollow {
+  color: #6b6b6b;
+  font-family: Karla, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.wishlistsm {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 4px;
+  width: 5vh;
+  height: 5vh;
+}
+.photodivproduct {
+  width: 100%;
+  height: 40vw;
+}
+@media only screen and (max-width: 1230px) {
+  .photodivproduct {
+    height: 56vw;
+  }
+  .footerlist li {
+    width: 8%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .photodivproduct {
+    height: 70vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .producttext {
+    font-size: 13px;
+  }
+  .heartlist {
+    width: 2.6vh;
+    height: 2.6vh;
+    margin-top: 4px;
+  }
+  .pricetext {
+    font-size: 9px;
+    margin-top: -5px;
+  }
+  .photodivproduct {
+    height: 40vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .smallerdiv {
+    height: 55vh;
+  }
+  .footerlist li {
+    width: 9%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .producttext {
+    font-size: 13px;
+  }
+
+  .footerlist li {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .copyrightfooter {
+    font-size: 11px;
+  }
+  .footerline {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(133, 133, 133);
+    margin-top: 5%;
+    position: relative;
+    left: 17%;
+  }
+  .heartlist {
+    width: 2.6vh;
+    height: 2.6vh;
+    margin-top: 4px;
+  }
+  .pricetext {
+    font-size: 9px;
+    margin-top: -1px;
+  }
+  .photodivproduct {
+    height: 60vw;
+  }
+  .smallerdiv {
+    width: 100%;
+    height: 40vh;
+  }
+  .fulldivphoto {
+    width: 95%;
+  }
+  .slick-next {
+    background-size: 20px 25px !important;
+    margin-right: 6px !important;
+  }
+  .slick-prev {
+    background-size: 20px 25px !important;
+    margin-left: 6px !important;
+  }
+  .footerfollow {
+    font-size: 3vw;
+  }
+  .footerdiv svg {
+    width: 6vw;
+    height: 6vw;
+  }
+  .Websitenamefooter {
+    font-size: 7vw;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .footerfollow {
+    font-size: 4vw;
+    transition: 0.5s;
+  }
+  .footerdiv svg {
+    width: 7vw;
+    height: 7vw;
+    transition: 0.5s;
+  }
+  .Websitenamefooter {
+    font-size: 7.5vw;
+  }
+  .footerlist li {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) and (max-height: 800px) {
+  .smallerdiv {
+    width: 100%;
+    height: 60vh;
+  }
+}

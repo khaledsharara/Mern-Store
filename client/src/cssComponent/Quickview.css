@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Peddana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Padauk:wght@400;700&family=Peddana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Padauk:wght@400;700&family=Peddana&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Corben:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Padauk:wght@400;700&family=Peddana&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Corben:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Padauk:wght@400;700&family=Peddana&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+.Quickviewpopup {
+  z-index: 4000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.QuickviewMaindiv {
+  z-index: 4000;
+  width: 70%;
+  height: 85%;
+  position: fixed;
+  background-color: #424242;
+  top: 8%;
+  border-radius: 20px;
+}
+
+.QuickTitlediv h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(41, 41, 41);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.2vw;
+  text-align: center;
+  margin-top: 1vw;
+}
+.QuickTitlediv p {
+  color: rgb(246, 245, 245);
+  font-family: "Padauk", sans-serif;
+  font-size: 1.1vw;
+  width: 80%;
+  font-weight: 400;
+  margin-left: 10%;
+  margin-bottom: 1vw;
+}
+.QuickLine {
+  width: 95%;
+  height: 1px;
+  background-color: rgb(105, 104, 104);
+}
+.QuickColortext {
+  color: rgb(246, 245, 245);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 100;
+  font-size: 1.1vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.3vw;
+  padding-left: 0.3vw;
+}
+.quickcolorpostiion {
+  padding-left: 0.3vw;
+}
+.Colorpostion input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.Colorpostion {
+  height: 50px;
+  width: 100%;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 0.5vw;
+  color: #424242;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.1vw;
+  width: 1.1vw;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(57, 56, 56);
+  margin-top: -5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+  border: 1px solid white;
+}
+
+.colorstyle:active {
+  border: 0.15em solid white;
+}
+#color1 {
+  background-color: rgb(77, 1, 77);
+}
+#color2 {
+  background-color: rgb(146, 95, 1);
+}
+#color3 {
+  background-color: rgb(138, 1, 1);
+}
+
+#color4 {
+  background-color: rgb(1, 84, 1);
+}
+.textpositionquick {
+  width: 85%;
+  margin-left: 3.5vw;
+  margin-top: -0.5vw;
+}
+.SizeButton {
+  width: 5vw;
+  padding-top: 0.3vw;
+  padding-bottom: 0.3vw;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  box-shadow: 2px 2px 2px rgb(57, 56, 56);
+  margin-right: 10px;
+  border-radius: 0.3vw;
+}
+.SizeButton:hover {
+  background-color: black;
+  color: white;
+}
+.SizeButtonspecial {
+  background-color: black;
+  color: white;
+  width: 5vw;
+  padding-top: 0.3vw;
+  padding-bottom: 0.3vw;
+  font-weight: 400;
+  box-shadow: 2px 2px 2px rgb(57, 56, 56);
+  margin-right: 10px;
+  border-radius: 0.3vw;
+}
+#pricequick {
+  font-family: "Roboto Flex", sans-serif;
+  color: white;
+  padding: 0.3vw;
+  position: relative;
+  display: inline-block;
+  font-size: 1vw;
+  font-weight: 100;
+}
+#actualpricequick {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 100;
+  color: white;
+  padding: 0.3vw;
+  position: relative;
+  display: inline-block;
+  margin-left: 20vw;
+  font-size: 1vw;
+}
+.quantitydiv {
+  background-color: #2b2b2b;
+  padding: 2px;
+  width: 4.5vw;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+.quantitydiv h1 {
+  position: relative;
+  font-family: "Donegal One", serif;
+  padding: 2px;
+  display: inline-block;
+  color: white;
+}
+#QuickQuantity {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#Quickbottomline {
+  margin-top: 30%;
+}
+#QuickCart {
+  background-color: #232323;
+  color: white;
+  padding: 1vw;
+  width: 25vw;
+  font-size: 1.2vw;
+  border-radius: 5vw;
+  margin-top: 0.7vw;
+  right: inherit;
+  margin-left: 1vw;
+}
+#QuickCart:hover {
+  background-color: rgb(49, 49, 49);
+  color: rgb(191, 191, 191);
+}
+.QuickPopupScreen {
+  width: 100%;
+  height: 100%;
+}
+.QuickPopupScreen.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.QuickPopupScreen.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.QuickPhotoDiv {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  transition: width 1s;
+}
+.QuickTextDiv {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10vw;
+  float: right;
+  transition: width 1s;
+}
+#mainphotoQuick {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  float: right;
+  transition: width 1s;
+}
+.QuickPhotoDiv:hover {
+  width: 55%;
+  height: 100%;
+  transition: width 1.5s;
+}
+.QuickPhotoDiv:hover #mainphotoQuick {
+  width: 75%;
+  height: 100%;
+  float: right;
+  border-radius: 0;
+  transition: width 1.5s;
+}
+.QuickPhotoDiv:hover + .QuickTextDiv {
+  width: 45%;
+  height: 100%;
+  transition: width 1.5s;
+}
+.QuickPhotoDiv:hover #QuickHoverPhotos {
+  display: block;
+  animation: fadephoto 2s;
+}
+@keyframes fadephoto {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#QuickHoverPhotos {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 25%;
+}
+.QuickHoverPhotosDiv {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 22%;
+  overflow: hidden;
+  margin: 1vw;
+}
+.QuickHoverImages {
+  position: relative;
+  object-position: 25% 30%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.QuickHoverImagesActive {
+  position: relative;
+  object-position: 25% 30%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: none;
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .QuickviewMaindiv {
+    display: flex;
+    width: 80% !important;
+    height: 80% !important;
+  }
+  .QuickTitlediv h1 {
+    font-size: 3.2vw;
+  }
+  .QuickTitlediv p {
+    font-size: 1.3vw;
+  }
+  #pricequick {
+    font-size: 1.2vw;
+  }
+  #actualpricequick {
+    font-size: 1.2vw;
+  }
+  .checkmark {
+    height: 1.4vw;
+    width: 1.4vw;
+  }
+  .QuickColortext {
+    font-size: 1.5vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-left: 0.3svw;
+  }
+  #actualpricequick {
+    padding: 0vw;
+  }
+  #pricequick {
+    color: white;
+    padding: 0.3vw;
+    position: relative;
+    display: inline-block;
+    font: 1vw;
+  }
+  .SizeButton {
+    width: 6vw;
+    font-size: 1.3vw;
+  }
+  .SizeButtonspecial {
+    width: 6vw;
+    font-size: 1.3vw;
+  }
+  .quantitydiv {
+    padding: 2px;
+    width: 6.5vw;
+    margin-right: 10px;
+  }
+  .quantitydiv h1 {
+    position: relative;
+    font-family: "Donegal One", serif;
+    padding: 2px;
+    display: inline-block;
+    color: white;
+  }
+  #QuickCart {
+    padding: 1vw;
+    width: 25vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-left: 1vw;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .QuickviewMaindiv {
+    display: flex;
+    width: 95% !important;
+    height: 80% !important;
+  }
+  .QuickTitlediv h1 {
+    font-size: 4.2vw;
+  }
+  .QuickTitlediv p {
+    font-size: 1.7vw;
+  }
+  #pricequick {
+    font-size: 1.7vw;
+  }
+  #actualpricequick {
+    font-size: 1.7vw;
+    margin-left: 25vw;
+  }
+  .checkmark {
+    height: 1.8vw;
+    width: 1.8vw;
+  }
+  .QuickColortext {
+    font-size: 1.8vw;
+    padding-top: 0.9vw;
+    padding-bottom: 0.6vw;
+    padding-left: 0.3svw;
+  }
+
+  .SizeButton {
+    width: 6.8vw;
+    font-size: 1.6vw;
+  }
+  .SizeButtonspecial {
+    width: 6.8vw;
+    font-size: 1.6vw;
+  }
+  .quantitydiv {
+    padding: 2px;
+    width: 8vw;
+    margin-right: 10px;
+  }
+  .quantitydiv h1 {
+    position: relative;
+    font-family: "Donegal One", serif;
+    padding: 2px;
+    display: inline-block;
+    color: white;
+  }
+  #QuickCart {
+    padding: 1.8vw;
+    width: 35vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-left: 1vw;
+  }
+  .quickcolorpostiion {
+    margin-bottom: -1vw;
+  }
+  .QuickTextDiv {
+    width: 50%;
+    height: 100%;
+  }
+  #Quickbottomline {
+    margin-top: 40%;
+  }
+  .QuickHoverPhotosDiv {
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .QuickPhotoDiv:hover {
+    width: 50%;
+    height: 100%;
+    transition: width 0s;
+  }
+  .QuickPhotoDiv:hover #mainphotoQuick {
+    width: 90%;
+    height: 80%;
+    border-radius: 1vw;
+    margin: 2.5vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    float: none;
+  }
+  .QuickPhotoDiv:hover + .QuickTextDiv {
+    width: 50%;
+    height: 100%;
+    transition: width 0s;
+  }
+  .QuickPhotoDiv:hover #QuickHoverPhotos {
+    animation: fadephoto 0s;
+  }
+  @keyframes fadephoto {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #QuickHoverPhotos {
+    display: block;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin: 1vw;
+    margin-left: 2vw;
+  }
+  .QuickHoverPhotosDiv {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 25%;
+    overflow: hidden;
+    margin: 0.5vw;
+  }
+  #mainphotoQuick {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 10% 30%;
+    overflow: hidden;
+    transition: width 1s;
+    margin: 2.5vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    float: none;
+  }
+  .QuickviewMaindiv {
+    display: flex;
+    width: 95% !important;
+    height: 60% !important;
+  }
+  .QuickTitlediv h1 {
+    font-size: 5vw;
+    margin-top: 3vw;
+  }
+  .QuickTitlediv p {
+    font-size: 2vw;
+  }
+  #pricequick {
+    font-size: 2vw;
+  }
+  #actualpricequick {
+    font-size: 2vw;
+    margin-left: 23vw;
+  }
+  .checkmark {
+    height: 2.8vw;
+    width: 2.8vw;
+  }
+  .QuickColortext {
+    font-size: 2.3vw;
+    padding-top: 0.9vw;
+    padding-bottom: 0.6vw;
+    padding-left: 0.3svw;
+  }
+
+  .SizeButton {
+    width: 10vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+
+    font-size: 2vw;
+  }
+  .SizeButtonspecial {
+    width: 10vw;
+    font-size: 2vw;
+  }
+  .quantitydiv {
+    padding: 0.1vw;
+    width: 15vw;
+    margin-right: 10px;
+  }
+  .quantitydiv h1 {
+    position: relative;
+    font-family: "Donegal One", serif;
+    display: inline-block;
+    color: white;
+    font-size: 2.3vw;
+    padding: 0.1vw;
+  }
+  .quantitydiv button {
+    font-size: 3.2vw;
+    padding: 0.1vw;
+  }
+  #QuickCart {
+    padding: 2.8vw;
+    width: 45vw;
+    font-size: 2.6vw;
+    font-weight: 600;
+    margin-top: 1vw;
+    margin-left: -4vw;
+    border-radius: 10vw;
+  }
+  .quickcolorpostiion {
+    height: 5vw;
+  }
+  .QuickTextDiv {
+    width: 50%;
+    height: 100%;
+  }
+  #Quickbottomline {
+    background-color: #424242;
+  }
+  .container {
+    padding-left: 4vw;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #Quickbottomline {
+    margin-top: 23vw;
+    background-color: #424242;
+  }
+
+  .quantitydiv h1 {
+    position: relative;
+    font-family: "Donegal One", serif;
+    display: inline-block;
+    color: white;
+    font-size: 2.5vw;
+    padding: 0.6vw;
+  }
+
+  .QuickTitlediv h1 {
+    font-size: 6vw;
+    margin-top: 3vw;
+  }
+  .QuickTitlediv p {
+    font-size: 2.3vw;
+  }
+  #pricequick {
+    font-size: 2.2vw;
+  }
+  #actualpricequick {
+    font-size: 2.2vw;
+    margin-left: 23vw;
+  }
+  .QuickColortext {
+    font-size: 2.7vw;
+  }
+  .quantitydiv h1 {
+    top: -1vw;
+  }
+  .quantitydiv button {
+    top: -0.8vw;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .QuickPhotoDiv:hover #mainphotoQuick {
+    width: 90%;
+    height: 78%;
+    border-radius: 1vw;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    float: none;
+  }
+
+  #mainphotoQuick {
+    position: relative;
+    width: 90%;
+    height: 78%;
+    object-fit: cover;
+    object-position: 10% 30%;
+    overflow: hidden;
+    transition: width 1s;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+  }
+  #Quickbottomline {
+    margin-top: 28vw;
+    background-color: #424242;
+  }
+  .SizeButton {
+    width: 10vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    font-size: 2.5vw;
+  }
+  .SizeButtonspecial {
+    width: 10vw;
+    font-size: 2vw;
+  }
+}

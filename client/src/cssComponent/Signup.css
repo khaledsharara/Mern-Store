@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Koulen&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Forum&family=Gowun+Dodum&family=Karla:ital,wght@0,200..800;1,200..800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Buenard:wght@400;700&family=Corben:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Donegal+One&family=Forum&family=Gowun+Dodum&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&family=Khula:wght@300;400;600;700;800&family=Koulen&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Mate+SC&family=Padauk:wght@400;700&family=Peddana&family=Roboto+Flex:opsz,wdth,wght@8..144,98.6,211&display=swap");
+.LoginScreenBlack {
+  z-index: 400;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+.LoginScreenBlack.active {
+  z-index: 400;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+.LoginScreenBlack.inactive {
+  display: none;
+}
+.loginBox {
+  z-index: 4000;
+  width: 45%;
+  height: 50%;
+  position: fixed;
+  background-color: #282828;
+  top: 20%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(27, 26, 26);
+}
+.LoginText {
+  color: white;
+  font-family: "Koulen", sans-serif;
+  width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  padding: 1.5vw;
+  height: 6vw;
+  position: relative;
+  display: block;
+  text-shadow: 1px 1px 2px rgb(17, 16, 16);
+}
+.LoginInputPosition {
+  position: relative;
+  margin-left: 25%;
+}
+.LoginInputPosition label {
+  font-family: Karla, sans-serif;
+  font-weight: 200;
+  color: white;
+  position: relative;
+  width: 8vw;
+  margin-top: 1.5vw;
+  padding: 0.3vw;
+  display: inline-block;
+  text-align: right;
+  padding-right: 1vw;
+}
+.LoginInputPosition input {
+  color: white;
+  background-color: #313131;
+  border-radius: 3vw;
+  width: 22vw;
+  padding: 0.3vw;
+  position: relative;
+  margin-top: 1.5vw;
+}
+#SignupAccounttext {
+  font-family: Karla, sans-serif;
+  font-weight: 200;
+  color: #818181;
+  font-size: 0.8vw;
+  width: 100%;
+  text-align: center;
+  margin-top: 1vw;
+}
+#LoginButtonDiv {
+  width: 80%;
+  height: 2vw;
+}
+#LoginButton {
+  color: white;
+  background-color: #3c3c3c;
+  padding: 0.5vw;
+  width: 6vw;
+  border-radius: 1vw;
+  float: right;
+  margin-top: 0.8vw;
+  box-shadow: 1px 1px 2px rgb(17, 16, 16);
+}
+#LoginButton:hover {
+  color: #3c3c3c;
+  background-color: rgb(185, 183, 183);
+}
+.SignupText {
+  color: white;
+  font-family: "Koulen", sans-serif;
+  width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  padding: 1.5vw;
+  height: 4.5vw;
+  position: relative;
+  display: block;
+  margin-bottom: 1vw;
+  text-shadow: 1px 1px 2px rgb(17, 16, 16);
+}
+.SignupPosition {
+  position: relative;
+  margin-left: 25%;
+}
+
+.SignupPosition form {
+  width: 100%;
+}
+.SignupPosition input {
+  color: rgb(142, 142, 142);
+  font-family: Karla, sans-serif;
+  font-weight: 200;
+  background-color: #313131;
+  border-radius: 3vw;
+  width: 22vw;
+  padding: 0.3vw;
+  position: relative;
+  margin-top: 1.3vw;
+  display: block;
+}
+
+#LoginAccounttext {
+  font-family: Karla, sans-serif;
+  font-weight: 200;
+  color: #818181;
+  font-size: 0.8vw;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.3vw;
+}
+#SignupButtonDiv {
+  width: 75%;
+  height: 2vw;
+}
+#SignupButton {
+  color: white;
+  background-color: #3c3c3c;
+  padding: 0.3vw;
+  width: 5.5vw;
+  border-radius: 1vw;
+  float: right;
+  box-shadow: 1px 1px 2px rgb(17, 16, 16);
+}
+#SignupButton:hover {
+  color: #3c3c3c;
+  background-color: rgb(185, 183, 183);
+}
+#loginSection {
+  position: relative;
+  display: block;
+}
+#SignupSection {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.welcomebacktext {
+  font-family: Karla, sans-serif;
+  font-weight: 200;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
