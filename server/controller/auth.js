@@ -29,18 +29,20 @@ class Auth {
     console.log("req.body");
     let { name, email, password, cPassword } = req.body;
     let error = {};
-    if (!name || !email || !password || !cPassword) {
-      error = {
-        ...error,
-        name: "Filed must not be empty",
-        email: "Filed must not be empty",
-        password: "Filed must not be empty",
-        cPassword: "Filed must not be empty",
-      };
-      return res.json({ error });
+    if (!name) {
+      error.name = "Field must not be empty";
+    }
+    if (!email) {
+      error.email = "Field must not be empty";
+    }
+    if (!password) {
+      error.password = "Field must not be empty";
+    }
+    if (!cPassword) {
+      error.cPassword = "Field must not be empty";
     }
     if (name.length < 3 || name.length > 25) {
-      error = { ...error, name: "Name must be 3-25 charecter" };
+      error = { ...error, name: "Name must be 3-25 characters long" };
       return res.json({ error });
     } else {
       if (validateEmail(email)) {
@@ -48,7 +50,7 @@ class Auth {
         if ((password.length > 255) | (password.length < 8)) {
           error = {
             ...error,
-            password: "Password must be 8 charecter",
+            password: "Password must be at least 8 characters long",
             name: "",
             email: "",
           };

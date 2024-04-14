@@ -16,14 +16,18 @@ const Login = (props) => {
 
   const alert = (msg) => <div className="text-xs text-red-500">{msg}</div>;
 
-  const formSubmit = async () => {
+  const formSubmit = async (e) => {
+    e.preventDefault();
     setData({ ...data, loading: true });
     try {
+      console.log("email: ", data.email, "P", data.password)
       let responseData = await loginReq({
         email: data.email,
         password: data.password,
       });
+      console.log("res", responseData)
       if (responseData.error) {
+        console.log("in error thing")
         setData({
           ...data,
           loading: false,
@@ -31,6 +35,7 @@ const Login = (props) => {
           password: "",
         });
       } else if (responseData.token) {
+        console.log("in token thing because", responseData.token)
         setData({ email: "", password: "", loading: false, error: false });
         localStorage.setItem("jwt", JSON.stringify(responseData));
         window.location.href = "/";
@@ -42,75 +47,63 @@ const Login = (props) => {
 
   return (
     <Fragment>
-      <div className="text-center text-2xl mb-6">Login</div>
+          <h1 className="LoginText">Login</h1>
+          <h1 className="welcomebacktext">Welcome Back</h1>
+
       {layoutData.loginSignupError ? (
-        <div className="bg-red-200 py-2 px-4 rounded">
+        <div className="bg-red-200 px-4 py-2 rounded">
           You need to login for checkout. Haven't accont? Create new one.
         </div>
       ) : (
         ""
       )}
-      <form className="space-y-4">
-        <div className="flex flex-col">
-          <label htmlFor="name">
-            Username or email address
-            <span className="text-sm text-gray-600 ml-1">*</span>
-          </label>
-          <input
-            onChange={(e) => {
-              setData({ ...data, email: e.target.value, error: false });
-              layoutDispatch({ type: "loginSignupError", payload: false });
-            }}
-            value={data.email}
-            type="text"
-            id="name"
-            className={`${
-              !data.error ? "" : "border-red-500"
-            } px-4 py-2 focus:outline-none border`}
-          />
-          {!data.error ? "" : alert(data.error)}
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="password">
-            Password<span className="text-sm text-gray-600 ml-1">*</span>
-          </label>
-          <input
-            onChange={(e) => {
-              setData({ ...data, password: e.target.value, error: false });
-              layoutDispatch({ type: "loginSignupError", payload: false });
-            }}
-            value={data.password}
-            type="password"
-            id="password"
-            className={`${
-              !data.error ? "" : "border-red-500"
-            } px-4 py-2 focus:outline-none border`}
-          />
-          {!data.error ? "" : alert(data.error)}
-        </div>
-        <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center">
-          <div>
+    <div className="LoginInputPosition">
+
+        <form className="space-y-4" onSubmit={formSubmit}>
             <input
-              type="checkbox"
-              id="rememberMe"
-              className="px-4 py-2 focus:outline-none border mr-1"
+              onChange={(e) => {
+                setData({ ...data, email: e.target.value, error: false });
+                layoutDispatch({ type: "loginSignupError", payload: false });
+              }}
+              value={data.email}
+              type="text"
+              id="name"
+              placeholder=" Email"
+              className={`${
+                !data.error ? "" : "border-red-500"
+              } px-4 focus:outline-none border`}
             />
-            <label htmlFor="rememberMe">
-              Remember me<span className="text-sm text-gray-600">*</span>
-            </label>
+
+            <input
+              onChange={(e) => {
+                setData({ ...data, password: e.target.value, error: false });
+                layoutDispatch({ type: "loginSignupError", payload: false });
+              }}
+              value={data.password}
+              type="password"
+              id="password"
+              placeholder=" Password"
+              className={`${
+                !data.error ? "" : "border-red-500"
+              } px-4 focus:outline-none border`}
+            />
+                      <h1 id="SignupAccounttext">
+            Don't have an account ?{" "}
+            <span
+              onClick={()=> props.change()}
+              style={{ color: "#E5E5E5", cursor: "pointer" }}
+            >
+              Sign up
+            </span>
+          </h1>
+            {!data.error ? "" : alert(data.error)}
+          <div id="LoginButtonDiv"
+          type="submit"
+          >
+            <button id="LoginButton">Login</button>
           </div>
-          <a className="block text-gray-600" href="/">
-            Lost your password?
-          </a>
-        </div>
-        <div
-          onClick={(e) => formSubmit()}
-          style={{ background: "#303031" }}
-          className="font-medium px-4 py-2 text-white text-center cursor-pointer"
-        >
-          Login
-        </div>
-      </form>
+        </form>
+      </div>
     </Fragment>
   );
 };

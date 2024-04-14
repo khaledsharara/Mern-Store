@@ -234,25 +234,6 @@ const CartModal = () => {
                 >
                   Checkout ${data.cartTotalCost}
                 </div>
-                {/* ) : (
-                  <div
-                    className="px-4 py-2 bg-black text-white text-center cursor-pointer"
-                    onClick={(e) => {
-                      history.push("/");
-                      cartModalOpen();
-                      dispatch({
-                        type: "loginSignupError",
-                        payload: !data.loginSignupError,
-                      });
-                      dispatch({
-                        type: "loginSignupModalToggle",
-                        payload: !data.loginSignupModal,
-                      });
-                    }}
-                  >
-                    Checkout ${data.cartTotalCost}
-                  </div>
-                 )} */}
               </Fragment>
             ) : (
               <div className="px-4 py-2 bg-black text-white text-center cursor-not-allowed">
