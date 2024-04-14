@@ -14,6 +14,7 @@
 @import url("../src/cssComponent/ShoppingcartEmpty.css");
 @import url("../src/cssComponent/Signup.css");
 @import url("../src/cssComponent/componentpage.css");
+@import url("../src/cssComponent/Shopnow.css");
 
 .App {
   background-color: #454545;
@@ -376,6 +377,8 @@
 .fullscreenmenucart {
   position: fixed;
   position: -webkit-sticky;
+  background-color: rgba(0, 0, 0, 0.5);
+
   z-index: 100;
   width: 100%;
   height: 100vh;
@@ -421,7 +424,6 @@
   position: relative;
   width: 100%;
   height: 10vw;
-  animation: 4s fadeIn;
 }
 
 .productimage {
@@ -462,6 +464,7 @@
 .fullscreenmenu.active {
   opacity: 1;
   visibility: visible;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .fullscreenmenu.inactive {
   display: none;
@@ -480,16 +483,15 @@
   position: relative;
   background-color: #1b1b1b;
   animation: 1s slidenav;
+  right: 0vw;
 }
 
 @keyframes slidenav {
   0% {
-    width: 15%;
-    height: 100%;
+    right: -20vw;
   }
   100% {
-    width: 20%;
-    height: 100%;
+    right: 0vw;
   }
 }
 .contentdiv {
@@ -498,7 +500,6 @@
 .navbarcontent {
   width: 100%;
   text-align: right;
-  animation: 3s fadeIn;
 }
 @keyframes fadeIn {
   0% {
@@ -520,7 +521,26 @@
 .navbarcontent:hover svg {
   stroke: white;
   transition: 0.5s;
+  cursor: pointer;
 }
+.animationsicon:first-of-type:hover {
+  stroke: white;
+  transition: 0.5s;
+  cursor: pointer;
+  fill: white;
+}
+#homenav:hover svg {
+  fill: white;
+}
+#homeicon {
+  position: relative;
+  display: inline-block;
+  width: 4vh;
+  stroke: none;
+  transition: 0.5s;
+  height: 4vh;
+}
+
 .navbarcontent h1 {
   color: rgb(161, 160, 160);
   font-family: "DM Sans", sans-serif;
@@ -532,6 +552,7 @@
   width: 70%;
   margin-right: 13%;
   padding: 10px;
+  cursor: pointer;
 }
 .navbarcontent h1:hover {
   color: white;
@@ -565,7 +586,6 @@
   width: 100%;
   height: 12vh;
   text-align: right;
-  animation: 4s fadeIn;
 }
 #usernamediv h1 {
   color: white;
@@ -590,7 +610,6 @@
   height: 10px;
   margin-top: 10px;
   position: relative;
-  animation: 3s fadeIn;
 }
 .loginbuttonstyle {
   height: 40px;
@@ -635,19 +654,8 @@
 @media only screen and (max-width: 1200px) and (min-width: 1000px) and (max-height: 800px) {
   .sidebar {
     width: 25%;
+  }
 
-    animation: 1s slidenav;
-  }
-  @keyframes slidenav {
-    0% {
-      width: 15%;
-      height: 100%;
-    }
-    100% {
-      width: 25%;
-      height: 100%;
-    }
-  }
   /* .cartsidebar {
     width: 40%;
     animation: 1s slidenavcart;
@@ -684,7 +692,6 @@
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 3s fadeIn;
   }
   @keyframes fadeIn {
     0% {
@@ -698,20 +705,6 @@
     }
   }
 
-  .halfscreen {
-    width: 75%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 85%;
-      height: 100%;
-    }
-    100% {
-      width: 75%;
-      height: 100%;
-    }
-  }
   .navbarcontent svg {
     width: 3.5vh;
     height: 3.5vh;
@@ -826,35 +819,8 @@
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
   .sidebar {
     width: 35%;
-
-    animation: 1s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 30%;
-      height: 100%;
-    }
-    100% {
-      width: 35%;
-      height: 100%;
-    }
-  }
-
-  .halfscreen {
-    width: 65%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 70%;
-      height: 100%;
-    }
-    100% {
-      width: 65%;
-      height: 100%;
-    }
-  }
   #usernamediv svg {
     height: 6vh;
     width: 8vh;
@@ -862,19 +828,8 @@
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 3s fadeIn;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
   .navbarcontent svg {
     width: 3vh;
     height: 3vh;
@@ -924,19 +879,8 @@
 @media only screen and (max-width: 830px) {
   .sidebar {
     width: 30%;
-    animation: 1s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 19%;
-      height: 100%;
-    }
-    100% {
-      width: 30%;
-      height: 100%;
-    }
-  }
   /* .cartsidebar {
     width: 40%;
     animation: 1s slidenavcart;
@@ -987,19 +931,8 @@
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 3s fadeIn;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
   .navbarcontent svg {
     width: 4.2vh;
     height: 4.2vh;
@@ -1106,50 +1039,11 @@
 @media only screen and (max-width: 1350px) and (min-width: 1200) {
   .sidebar {
     width: 30%;
-
-    animation: 2s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 28%;
-      height: 100%;
-    }
-    100% {
-      width: 30%;
-      height: 100%;
-    }
-  }
-
-  .halfscreen {
-    width: 72%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 70%;
-      height: 100%;
-    }
-    100% {
-      width: 70%;
-      height: 100%;
-    }
-  }
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 3s fadeIn;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   .navbarcontent svg {
     width: 2vh;
@@ -1220,50 +1114,11 @@
 @media only screen and (max-width: 650px) {
   .sidebar {
     width: 40%;
-
-    animation: 1s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 5%;
-      height: 100%;
-    }
-    100% {
-      width: 40%;
-      height: 100%;
-    }
-  }
-
-  .halfscreen {
-    width: 60%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 95%;
-      height: 100%;
-    }
-    100% {
-      width: 60%;
-      height: 100%;
-    }
-  }
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 3s fadeIn;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   .navbarcontent svg {
     width: 3.5vh;
@@ -1337,36 +1192,13 @@
 @media only screen and (max-width: 450px) {
   .sidebar {
     width: 65%;
-
-    animation: 1s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 30%;
-      height: 100%;
-    }
-    100% {
-      width: 65%;
-      height: 100%;
-    }
-  }
   .navbarcontent {
     width: 100%;
     text-align: right;
-    animation: 5s fadeIn;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    96% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
   .cartendbuttonstyle {
     font-size: 2.5vw;
   }
@@ -1409,20 +1241,7 @@
       height: 100%;
     }
   } */
-  .halfscreen {
-    width: 35%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 70%;
-      height: 100%;
-    }
-    100% {
-      width: 35%;
-      height: 100%;
-    }
-  }
+
   .navbarcontent svg {
     width: 3.5vh;
     height: 3.6vh;
@@ -1535,20 +1354,8 @@
 @media only screen and (max-width: 390px) {
   .sidebar {
     width: 60%;
-
-    animation: 1s slidenav;
   }
 
-  @keyframes slidenav {
-    0% {
-      width: 30%;
-      height: 100%;
-    }
-    100% {
-      width: 60%;
-      height: 100%;
-    }
-  }
   .cartendbuttonstyle {
     font-size: 2.5vw;
   }
@@ -1590,34 +1397,8 @@
   } */
   .navbarcontent {
     width: 100%;
-    animation: 2s fadeIn;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
-  .halfscreen {
-    width: 40%;
-    animation: halfslide 1s;
-  }
-  @keyframes halfslide {
-    0% {
-      width: 70%;
-      height: 100%;
-    }
-    100% {
-      width: 40%;
-      height: 100%;
-    }
-  }
   .navbarcontent svg {
     width: 3.5vh;
     height: 3.5vh;

@@ -26,12 +26,21 @@
 .loginBox {
   z-index: 4000;
   width: 45%;
-  height: 50%;
+  height: 25vw;
   position: fixed;
   background-color: #282828;
   top: 20%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgb(27, 26, 26);
+  animation: jumpup 1s;
+}
+@keyframes jumpup {
+  0% {
+    top: 20vw;
+  }
+  100% {
+    top: 20%;
+  }
 }
 .LoginText {
   color: white;
@@ -39,8 +48,8 @@
   width: 100%;
   font-size: 3vw;
   text-align: center;
-  padding: 1.5vw;
-  height: 6vw;
+  padding-top: 1.5vw;
+  height: 5.4vw;
   position: relative;
   display: block;
   text-shadow: 1px 1px 2px rgb(17, 16, 16);
@@ -49,26 +58,15 @@
   position: relative;
   margin-left: 25%;
 }
-.LoginInputPosition label {
-  font-family: Karla, sans-serif;
-  font-weight: 200;
-  color: white;
-  position: relative;
-  width: 8vw;
-  margin-top: 1.5vw;
-  padding: 0.3vw;
-  display: inline-block;
-  text-align: right;
-  padding-right: 1vw;
-}
+
 .LoginInputPosition input {
   color: white;
   background-color: #313131;
   border-radius: 3vw;
-  width: 22vw;
+  width: 75%;
   padding: 0.3vw;
   position: relative;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
 }
 #SignupAccounttext {
   font-family: Karla, sans-serif;
@@ -77,10 +75,10 @@
   font-size: 0.8vw;
   width: 100%;
   text-align: center;
-  margin-top: 1vw;
+  margin-top: 0.5vw;
 }
 #LoginButtonDiv {
-  width: 80%;
+  width: 75%;
   height: 2vw;
 }
 #LoginButton {
@@ -94,8 +92,8 @@
   box-shadow: 1px 1px 2px rgb(17, 16, 16);
 }
 #LoginButton:hover {
-  color: #3c3c3c;
-  background-color: rgb(185, 183, 183);
+  color: #151515;
+  background-color: rgb(199, 199, 199);
 }
 .SignupText {
   color: white;
@@ -107,7 +105,7 @@
   height: 4.5vw;
   position: relative;
   display: block;
-  margin-bottom: 1vw;
+  margin-bottom: 1.5vw;
   text-shadow: 1px 1px 2px rgb(17, 16, 16);
 }
 .SignupPosition {
@@ -127,7 +125,7 @@
   width: 22vw;
   padding: 0.3vw;
   position: relative;
-  margin-top: 1.3vw;
+  margin-top: 0.8vw;
   display: block;
 }
 
@@ -154,8 +152,8 @@
   box-shadow: 1px 1px 2px rgb(17, 16, 16);
 }
 #SignupButton:hover {
-  color: #3c3c3c;
-  background-color: rgb(185, 183, 183);
+  color: #151515;
+  background-color: rgb(199, 199, 199);
 }
 #loginSection {
   position: relative;
@@ -172,4 +170,221 @@
   color: white;
   width: 100%;
   text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  .loginBox {
+    z-index: 4000;
+    width: 55%;
+    height: 30vw;
+
+    position: fixed;
+    background-color: #282828;
+    top: 20%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(27, 26, 26);
+    animation: jumpup 1s;
+  }
+  @keyframes jumpup {
+    0% {
+      top: 20vw;
+    }
+    100% {
+      top: 20%;
+    }
+  }
+  .LoginText {
+    font-size: 4vw;
+    text-align: center;
+    padding: 1.5vw;
+    height: 6vw;
+    position: relative;
+    display: block;
+    text-shadow: 1px 1px 2px rgb(17, 16, 16);
+  }
+  .welcomebacktext {
+    font-family: Karla, sans-serif;
+
+    padding-top: 1.5vw;
+  }
+
+  .LoginInputPosition label {
+    font-family: Karla, sans-serif;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    width: 8vw;
+    margin-top: 1.5vw;
+    padding: 0.3vw;
+    display: inline-block;
+    text-align: right;
+    padding-right: 1vw;
+  }
+  .LoginInputPosition input {
+    color: white;
+    background-color: #313131;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    position: relative;
+    margin-top: 1.5vw;
+  }
+  #SignupAccounttext {
+    font-size: 1.3vw;
+  }
+  #LoginButton {
+    font-size: 1.3vw;
+  }
+  .SignupPosition {
+    margin-top: 2vw;
+    margin-left: 20%;
+  }
+  .SignupPosition input {
+    width: 35vw;
+    font-size: 1.5vw;
+  }
+  .SignupText {
+    color: white;
+    font-family: "Koulen", sans-serif;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 1vw;
+
+    padding: 1vw;
+  }
+  #LoginAccounttext {
+    font-family: Karla, sans-serif;
+    font-weight: 200;
+    color: #818181;
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3vw;
+  }
+  #SignupButton {
+    padding: 0.6vw;
+    width: 5.8vw;
+    font-size: 1.3vw;
+    border-radius: 1vw;
+    float: right;
+    box-shadow: 1px 1px 2px rgb(37, 34, 34);
+  }
+  #SignupButtonDiv {
+    width: 82%;
+    height: 2vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .loginBox {
+    z-index: 4000;
+    width: 75%;
+    height: 60vw;
+    position: fixed;
+    background-color: #282828;
+    top: 20%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(27, 26, 26);
+    animation: jumpup 1s;
+  }
+  @keyframes jumpup {
+    0% {
+      top: 20vw;
+    }
+    100% {
+      top: 20%;
+    }
+  }
+  .LoginText {
+    font-size: 7vw;
+    text-align: center;
+    padding: 1.8vw;
+    height: 6vw;
+    position: relative;
+    display: block;
+    margin-top: 2.5vw;
+    text-shadow: 1px 1px 2px rgb(17, 16, 16);
+  }
+  .welcomebacktext {
+    font-family: Karla, sans-serif;
+    font-size: 3vw;
+    margin-top: 4vw;
+  }
+
+  .LoginInputPosition input {
+    color: white;
+    background-color: #313131;
+    border-radius: 3vw;
+    font-size: 3vw;
+    padding: 0.9vw;
+    position: relative;
+    margin-top: 1.8vw;
+  }
+  #SignupAccounttext {
+    font-size: 2.7vw;
+  }
+  #LoginButtonDiv {
+    width: 80%;
+    height: 2vw;
+  }
+  #LoginButton {
+    background-color: #3c3c3c;
+    font-size: 3vw;
+    padding: 0.6vw;
+    width: 10vw;
+    border-radius: 1.3vw;
+    float: right;
+    margin-top: 2vw;
+    box-shadow: 1px 1px 2px rgb(39, 37, 37);
+  }
+  .SignupPosition {
+    margin-top: 6vw;
+    margin-left: 15%;
+  }
+
+  .SignupPosition input {
+    width: 55vw;
+    font-size: 3.3vw;
+    color: rgb(142, 142, 142);
+    font-family: Karla, sans-serif;
+    font-weight: 200;
+    background-color: #313131;
+    border-radius: 3vw;
+    padding: 0.5vw;
+    position: relative;
+    margin-top: 2vw;
+    display: block;
+  }
+  .SignupText {
+    color: white;
+    font-family: "Koulen", sans-serif;
+    width: 100%;
+    font-size: 5.5vw;
+    text-align: center;
+    margin-top: 4vw;
+
+    padding: 1vw;
+  }
+  #LoginAccounttext {
+    font-family: Karla, sans-serif;
+    font-weight: 200;
+    color: #818181;
+    font-size: 2.7vw;
+    padding: 0.5vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3vw;
+  }
+  #SignupButton {
+    padding: 0.7vw;
+    width: 11vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+    float: right;
+    box-shadow: 1px 1px 2px rgb(37, 34, 34);
+  }
+  #SignupButtonDiv {
+    width: 85%;
+    height: 2vw;
+  }
 }

@@ -7,36 +7,17 @@
   display: inline-block;
   position: relative;
   background-color: #1b1b1b;
-  animation: 1s slidenavcart;
+  right: 0;
 }
 @keyframes slidenavcart {
   0% {
-    width: 20%;
-    height: 100%;
+    right: -50vw;
   }
   100% {
-    width: 30%;
-    height: 100%;
+    right: 0;
   }
 }
-.halfscreencartEmpty {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 70%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
-  animation: halfslidecart 1s;
-}
-@keyframes halfslidecart {
-  0% {
-    width: 80%;
-    height: 100%;
-  }
-  100% {
-    width: 70%;
-    height: 100%;
-  }
-}
+
 .contentdivcartEmpty {
   margin-top: 0;
 }
@@ -46,7 +27,6 @@
   top: 0;
   position: relative;
   text-align: center;
-  animation: 4s fadeIn;
 }
 #usernamedivcartEmpty h1 {
   color: white;
@@ -64,7 +44,6 @@
   height: 6vw;
   text-align: right;
   background-color: #282727;
-  animation: 3s fadeIn;
   position: absolute;
   bottom: 0;
 }
@@ -105,34 +84,7 @@
   .cartsidebarEmpty {
     width: 40%;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 40%;
-      height: 100%;
-    }
-  }
-  .halfscreencartEmpty {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 60%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 60%;
-      height: 100%;
-    }
-  }
+
   .cartendbuttonstyle {
     font-size: 1.4vw;
   }
@@ -141,34 +93,7 @@
   .cartsidebarEmpty {
     width: 60%;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 60%;
-      height: 100%;
-    }
-  }
-  .halfscreencartEmpty {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 40%;
-      height: 100%;
-    }
-  }
+
   .cartendbuttonstyle {
     font-size: 2vw;
   }
@@ -187,34 +112,7 @@
   .cartsidebarEmpty {
     width: 65%;
   }
-  @keyframes slidenavcart {
-    0% {
-      width: 20%;
-      height: 100%;
-    }
-    100% {
-      width: 65%;
-      height: 100%;
-    }
-  }
-  .halfscreencartEmpty {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 35%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    animation: halfslidecart 1s;
-  }
-  @keyframes halfslidecart {
-    0% {
-      width: 80%;
-      height: 100%;
-    }
-    100% {
-      width: 35%;
-      height: 100%;
-    }
-  }
+
   .cartendbuttonstyle {
     font-size: 2.8vw;
   }
