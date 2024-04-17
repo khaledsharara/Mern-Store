@@ -67,185 +67,136 @@ const CartModal = () => {
 
   return (
     <Fragment>
-      {/* Black Overlay */}
       <div
-        className={`${
-          !data.cartModal ? "hidden" : ""
-        } fixed top-0 z-30 w-full h-full bg-black opacity-50`}
-      />
-      {/* Cart Modal Start */}
-      <section
-        className={`${
-          !data.cartModal ? "hidden" : ""
-        } fixed z-40 inset-0 flex items-start justify-end`}
-      >
-        <div
-          style={{ background: "#303031" }}
-          className="w-full md:w-5/12 lg:w-4/12 h-full flex flex-col justify-between"
+      className={`fullscreenmenucart ${data.cartModal ? "active" : "inactive"}`}
+      onClick={() => {
+        cartModalOpen();
+        showitems();
+      }}
         >
-          <div className="overflow-y-auto">
-            <div className="border-b border-gray-700 flex justify-between">
-              <div className="p-4 text-white text-lg font-semibold">Cart</div>
-              {/* Cart Modal Close Button */}
-              <div className="p-4 text-white">
+      
+
+          <div className="flex flex-col cartsidebar " onClick={(e) => {
+          e.stopPropagation();
+        }}>
+            <div className="contentdivcart">
+              <div id="usernamedivcart">
                 <svg
-                  onClick={(e) => cartModalOpen()}
-                  className="w-6 h-6 cursor-pointer"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
                   />
                 </svg>
+                <h1>Shopping Cart</h1>
+                {products ? <div className="shopchartline"></div> : <div className="shopchartlineEmpty"></div>}
               </div>
             </div>
-            <div className="m-4 flex-col">
-              {products &&
-                products.length !== 0 &&
-                products.map((item, index) => {
-                  return (
-                    <Fragment key={index}>
-                      {/* Cart Product Start */}
-                      <div className="text-white flex space-x-2 my-4 items-center">
-                        <img
-                          className="w-16 h-16 object-cover object-center"
-                          src={`${item.pImages[0]}`}
-                          alt="cartProduct"
-                        />
-                        <div className="relative w-full flex flex-col">
-                          <div className="my-2">{item.pName}</div>
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center justify-between space-x-2">
-                              <div className="text-sm text-gray-400">
-                                Quantity :
-                              </div>
-                              <Fragment>
-                                <div className="flex items-center space-x-2">
-                                  <span
-                                    onClick={() =>
-                                      handleQuantityUpdate(
-                                        "decrease",
-                                        item._id,
-                                        item.pQuantity
-                                      )
-                                    }
+            <div className=" overflow-y-auto">
+              
+                {products &&
+                        products.length !== 0 &&
+                      products.map((item, index) => {
+                        return (
+                          <Fragment key={index}>
+                            <div className="productfulldiv" id="totalproductdiv">
+                                  <div className="productimagediv">
+                                    <img src={`${item.pImages[0]}`} className="productimage" />
+                                  </div>
+                                  <div className="productstextdiv">
+                                    <h1 className="productnametext">{item.pName}</h1>
+                                    <h1 className="productpricetext">EGP{subTotal(item._id, item.pPrice)}</h1>
+                                    <div className="quantitydiv">
+                                      <button onClick={() =>
+                                            handleQuantityUpdate(
+                                              "decrease",
+                                              item._id,
+                                              item.pQuantity
+                                            )
+                                          } id="minusquantity">
+                                        -
+                                      </button>
+                                      <h1 id="quantnum">{quantity(item._id)}</h1>
+                                      <button onClick={() =>
+                                            handleQuantityUpdate(
+                                              "increase",
+                                              item._id,
+                                              item.pQuantity
+                                            )
+                                          } id="addquantity">
+                                        +
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div className="closingicondiv">
+                                    <button
+                                  onClick={(e) => removeCartProduct(item._id)}
                                   >
-                                    <svg
-                                      className="w-5 h-5 fill-current cursor-pointer"
-                                      fill="currentColor"
-                                      viewBox="0 0 20 20"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        fillRule="evenodd"
-                                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                                        clipRule="evenodd"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <span className="font-semibold">
-                                    {quantity(item._id)}
-                                  </span>
-                                  <span
-                                    onClick={() =>
-                                      handleQuantityUpdate(
-                                        "increase",
-                                        item._id,
-                                        item.pQuantity
-                                      )
-                                    }
-                                  >
-                                    <svg
-                                      className="w-5 h-5 fill-current cursor-pointer"
-                                      fill="currentColor"
-                                      viewBox="0 0 20 20"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        fillRule="evenodd"
-                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                        clipRule="evenodd"
-                                      />
-                                    </svg>
-                                  </span>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="gray"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="#1b1b1b"
+                                        class="w-10 h-10"
+                                      >
+                                            <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                                        />
+                                      </svg>
+                                    </button>
+                                  </div>
                                 </div>
-                              </Fragment>
-                            </div>
-                            <div>
-                              {" "}
-                              <span className="text-sm text-gray-400">
-                                Subtotoal :
-                              </span>{" "}
-                              ${subTotal(item._id, item.pPrice)}
-                            </div>{" "}
-                            {/* SUbtotal Count */}
-                          </div>
-                          {/* Cart Product Remove Button */}
-                          <div
-                            onClick={(e) => removeCartProduct(item._id)}
-                            className="absolute top-0 right-0 text-white"
-                          >
-                            <svg
-                              className="w-5 h-5 cursor-pointer"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Cart Product Start */}
-                    </Fragment>
-                  );
-                })}
-
-              {products === null && (
-                <div className="m-4 flex-col text-white text-xl text-center">
-                  No product in cart
-                </div>
-              )}
+                          </Fragment>
+                        );})}
             </div>
-          </div>
-          <div className="m-4 space-y-4">
-            <div
-              onClick={(e) => cartModalOpen()}
-              className="cursor-pointer px-4 py-2 border border-gray-400 text-white text-center cursor-pointer"
-            >
-              Continue shopping
-            </div>
-            {data.cartTotalCost ? (
-              <Fragment>
-                <div
-                  className="px-4 py-2 bg-black text-white text-center cursor-pointer"
-                  onClick={(e) => {
-                    history.push("/checkout");
-                    cartModalOpen();
-                  }}
-                >
-                  Checkout ${data.cartTotalCost}
-                </div>
-              </Fragment>
-            ) : (
-              <div className="px-4 py-2 bg-black text-white text-center cursor-not-allowed">
-                Checkout
+                    {products === null ? <div className="navbarcontentendcart">
+            <h1 className="cartendbuttonstyle"> No Products in Cart</h1>
+          </div> : <div className="navbarcontentendcartProducts">
+              <div className="grandtotaldiv">
+                <div className="grandtotalline"></div>
+                <h1 className="totaltextstyle" id="grandtotalplacement">
+                  Grand Total
+                </h1>
+                <h1 className="totaltextstyle" id="priceplacement">
+                EGP{data.cartTotalCost}
+                </h1>
+                <div className="grandtotalline"></div>
               </div>
-            )}
+              <div className="buttondivs">
+                <button id="ContiuneshoppingButton" onClick={()=>cartModalOpen()}>Contiune Shopping</button>
+                <button id="CheckoutButton" onClick={(e) => {
+                      history.push("/checkout");
+                      cartModalOpen();
+                    }}>Checkout</button>
+              </div>
+            </div>}
+      
           </div>
-        </div>
-      </section>
-      {/* Cart Modal End */}
+          </div>
     </Fragment>
   );
 };
+
+function showitems() {
+  if (document.getElementsByClassName("fullscreenmenucart.inactive")) {
+    document.getElementById("menuicon").style.display = "inline-block";
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      document.getElementById("accounticon").style.display = "none";
+    } else {
+      document.getElementById("accounticon").style.display = "inline-block";
+    }
+    document.getElementById("shopingcart").style.display = "inline-block";
+  }
+}
 
 export default CartModal;

@@ -99,25 +99,26 @@ html {
   display: inline-block;
   float: right;
 }
-.slick-next {
+
+.filterarrowright {
   background: url("../images/shownowright.png") center center no-repeat !important;
   width: 5% !important;
   height: 4vw !important;
-  &::before {
-    display: none;
-  }
+  position: absolute;
+  right: -2vw;
+  top: -1vw;
   filter: brightness(50%);
 }
 
-.slick-prev {
+.filterarrowleft {
   background: url("../images/shopnowleft.png") center center no-repeat !important;
   width: 5% !important;
   height: 4vw !important;
+  position: absolute;
+  top: -1vw;
   filter: brightness(50%);
 
-  &::before {
-    display: none;
-  }
+  margin-left: -3vw;
 }
 .categorytext {
   color: #8d8d8d;

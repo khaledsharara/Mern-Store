@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 function App() {
   const [data, dispatch] = useReducer(layoutReducer, layoutState);
@@ -35,11 +36,13 @@ function App() {
   }, []);
 
   return (
-    <Fragment>
-      <LayoutContext.Provider value={{ data, dispatch }}>
-        <Routes />
-      </LayoutContext.Provider>
-    </Fragment>
+    <SkeletonTheme baseColor="#313131" highlightColor="#525252" duration={20}>
+      <Fragment>
+        <LayoutContext.Provider value={{ data, dispatch }}>
+          <Routes />
+        </LayoutContext.Provider>
+      </Fragment>
+    </SkeletonTheme>
   );
 }
 

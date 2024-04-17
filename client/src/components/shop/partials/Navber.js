@@ -340,7 +340,7 @@ const Navber = (props) => {
             </div>
           </div>
           {/* This is the shopping cart with productts*/}
-          <div
+          {/* <div
             className={`fullscreenmenucart ${data.cartModal ? "active" : "inactive"}`}
             onClick={() => {
               cartModalOpen();
@@ -348,7 +348,7 @@ const Navber = (props) => {
             }}
           >
             <Shoppingcart></Shoppingcart>
-          </div>
+          </div> */}
           {/* <div
             className={`LoginScreenBlack ${data.loginSignupModal ? "active" : "inactive"}`}
             onClick={() => {
@@ -408,58 +408,119 @@ function showitems() {
     document.getElementById("shopingcart").style.display = "inline-block";
   }
 }
-const Shoppingcart = () => {
-  return (
-    <div className="cartsidebar">
-      <div className="contentdivcart">
-        <div id="usernamedivcart">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="white"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-            />
-          </svg>
-          <h1>Shopping Cart</h1>
-          <div className="shopchartline"></div>
-        </div>
-      </div>
-      <Shoppingitem
-        image={productitem}
-        productname="Puffer Jacket"
-        price="LE 570.00"
-      ></Shoppingitem>
-      <Shoppingitem
-        image={productitem}
-        productname="Puffer Jacket"
-        price="LE 570.00"
-      ></Shoppingitem>
-      <div className="navbarcontentendcartProducts">
-        <div className="grandtotaldiv">
-          <div className="grandtotalline"></div>
-          <h1 className="totaltextstyle" id="grandtotalplacement">
-            Grand Total
-          </h1>
-          <h1 className="totaltextstyle" id="priceplacement">
-            price
-          </h1>
-          <div className="grandtotalline"></div>
-        </div>
-        <div className="buttondivs">
-          <button id="ContiuneshoppingButton">Contiune Shopping</button>
-          <button id="CheckoutButton">Checkout</button>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const Shoppingcart = () => {
+//   return (
+//     <div
+//     className={`fullscreenmenucart ${data.cartModal ? "active" : "inactive"}`}
+//     onClick={() => {
+//       cartModalOpen();
+//       showitems();
+//     }}
+//   >
+//         <div className="cartsidebar">
+//           <div className="contentdivcart">
+//             <div id="usernamedivcart">
+//               <svg
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 fill="none"
+//                 viewBox="0 0 24 24"
+//                 stroke-width="1.5"
+//                 stroke="white"
+//                 class="w-6 h-6"
+//               >
+//                 <path
+//                   stroke-linecap="round"
+//                   stroke-linejoin="round"
+//                   d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+//                 />
+//               </svg>
+//               <h1>Shopping Cart</h1>
+//               {products ? <div className="shopchartline"></div> : <div className="shopchartlineEmpty"></div>}
+//             </div>
+//           </div>
+//           {products &&
+//                 products.length !== 0 &&
+//                 products.map((item, index) => {
+//                   return (
+//                     <Fragment key={index}>
+//                       <div className="productfulldiv" id="totalproductdiv">
+//                             <div className="productimagediv">
+//                               <img src={`${item.pImages[0]}`} className="productimage" />
+//                             </div>
+//                             <div className="productstextdiv">
+//                               <h1 className="productnametext">{item.pName}</h1>
+//                               <h1 className="productpricetext">EGP{subTotal(item._id, item.pPrice)}</h1>
+//                               <div className="quantitydiv">
+//                                 <button onClick={() =>
+//                                       handleQuantityUpdate(
+//                                         "decrease",
+//                                         item._id,
+//                                         item.pQuantity
+//                                       )
+//                                     } id="minusquantity">
+//                                   -
+//                                 </button>
+//                                 <h1 id="quantnum">{quantity(item._id)}</h1>
+//                                 <button onClick={() =>
+//                                       handleQuantityUpdate(
+//                                         "increase",
+//                                         item._id,
+//                                         item.pQuantity
+//                                       )
+//                                     } id="addquantity">
+//                                   +
+//                                 </button>
+//                               </div>
+//                             </div>
+//                             <div className="closingicondiv">
+//                               <button 
+//                             onClick={(e) => removeCartProduct(item._id)}
+//                             >
+//                                 <svg
+//                                   xmlns="http://www.w3.org/2000/svg"
+//                                   fill="gray"
+//                                   viewBox="0 0 24 24"
+//                                   stroke-width="1.5"
+//                                   stroke="#1b1b1b"
+//                                   class="w-10 h-10"
+//                                 >
+//                                   <path
+//                                     stroke-linecap="round"
+//                                     stroke-linejoin="round"
+//                                     d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+//                                   />
+//                                 </svg>
+//                               </button>
+//                             </div>
+//                           </div>
+//                     </Fragment>
+//                   );})}
+//                   {products === null ? <div className="navbarcontentendcart">
+//           <h1 className="cartendbuttonstyle"> No Products in Cart</h1>
+//         </div> : <div className="navbarcontentendcartProducts">
+//             <div className="grandtotaldiv">
+//               <div className="grandtotalline"></div>
+//               <h1 className="totaltextstyle" id="grandtotalplacement">
+//                 Grand Total
+//               </h1>
+//               <h1 className="totaltextstyle" id="priceplacement">
+//               EGP{data.cartTotalCost}
+//               </h1>
+//               <div className="grandtotalline"></div>
+//             </div>
+//             <div className="buttondivs">
+//               <button id="ContiuneshoppingButton" onClick={()=>cartModalOpen()}>Contiune Shopping</button>
+//               <button id="CheckoutButton" onClick={(e) => {
+//                     history.push("/checkout");
+//                     cartModalOpen();
+//                   }}>Checkout</button>
+//             </div>
+//           </div>}
+          
+//         </div>
+//     </div>
+//   );
+// };
 
 const Shoppingitem = (props) => {
   const [counter, setCounter] = useState(1);

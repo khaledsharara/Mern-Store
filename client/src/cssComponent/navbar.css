@@ -1,0 +1,355 @@
+.fullscreenmenu.active {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.fullscreenmenu.inactive {
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar {
+  z-index: 40;
+  width: 20%;
+  height: 100%;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  background-color: #1b1b1b;
+  animation: 1s slidenav;
+  right: 0vw;
+}
+
+@keyframes slidenav {
+  0% {
+    right: -20vw;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+.contentdiv {
+  margin-top: 10%;
+}
+.navbarcontent {
+  width: 100%;
+  text-align: right;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbarcontent svg {
+  position: relative;
+  display: inline-block;
+  width: 4vh;
+  height: 4vh;
+}
+.navbarcontent:hover svg {
+  stroke: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.animationsicon:first-of-type:hover {
+  stroke: white;
+  transition: 0.5s;
+  cursor: pointer;
+  fill: white;
+}
+#homenav:hover svg {
+  fill: white;
+}
+#homeicon {
+  position: relative;
+  display: inline-block;
+  width: 4vh;
+  stroke: none;
+  transition: 0.5s;
+  height: 4vh;
+}
+
+.navbarcontent h1 {
+  color: rgb(161, 160, 160);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 3%;
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  margin-right: 13%;
+  padding: 10px;
+  cursor: pointer;
+}
+.navbarcontent h1:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.navbarcontent:hover {
+  border-color: #282727;
+  background-color: #282727;
+  transition: 0.5s;
+  color: white;
+}
+#usernamediv {
+  width: 100%;
+  height: 12vh;
+  text-align: right;
+}
+#usernamediv h1 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  position: relative;
+  font-size: 2.5vh;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+#usernamediv svg {
+  position: relative;
+  display: inline-block;
+  height: 7vh;
+  width: 10vh;
+  float: right;
+  margin-right: 20px;
+}
+.loginbutton {
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.loginbuttonstyle {
+  color: rgb(139, 138, 138);
+  font-family: "DM Sans", sans-serif;
+  background-color: #252525;
+  border-radius: 20px;
+  float: right;
+  margin-right: 30px;
+  font-size: 1vw;
+  padding: 1vw;
+}
+.loginbuttonstyle:hover {
+  color: white;
+  background-color: #454545;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1500px) {
+  .sidebar {
+    width: 25%;
+  }
+  .navbarcontent h1 {
+    font-size: 1.5vw;
+  }
+  .loginbuttonstyle {
+    padding: 0.8vw;
+    font-size: 1vw;
+  }
+  #usernamediv h1 {
+    font-size: 1.5vw;
+  }
+  #usernamediv svg {
+    height: 4vw;
+    width: 4.5vw;
+  }
+  #usernamediv {
+    height: 8vw;
+  }
+  #homeicon {
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+  .navbarcontent svg {
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 25%;
+  }
+  .navbarcontent h1 {
+    font-size: 1.5vw;
+  }
+  .loginbuttonstyle {
+    padding: 1vw;
+    font-size: 1.2vw;
+  }
+  #usernamediv h1 {
+    font-size: 1.7vw;
+  }
+  #usernamediv svg {
+    height: 5.3vw;
+    width: 7.3vw;
+  }
+  #usernamediv {
+    height: 9vw;
+  }
+  .navbarcontent svg {
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+  #homeicon {
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 30%;
+  }
+  .navbarcontent h1 {
+    font-size: 2vw;
+  }
+  .loginbuttonstyle {
+    padding: 1.2vw;
+    font-size: 1.5vw;
+  }
+  #usernamediv h1 {
+    font-size: 2.5vw;
+  }
+  #usernamediv svg {
+    height: 7vw;
+    width: 9vw;
+  }
+  #usernamediv {
+    height: 9vw;
+  }
+  .navbarcontent svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  #homeicon {
+    width: 3.1vw;
+    height: 3.1vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    width: 30%;
+  }
+  .navbarcontent h1 {
+    font-size: 2vw;
+  }
+  .loginbuttonstyle {
+    padding: 1vw;
+    font-size: 1.5vw;
+  }
+  #usernamediv h1 {
+    font-size: 2.3vw;
+  }
+  #usernamediv svg {
+    height: 6.5vw;
+    width: 8.5vw;
+  }
+  #usernamediv {
+    height: 9vw;
+  }
+  .navbarcontent svg {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 40%;
+  }
+  .navbarcontent h1 {
+    font-size: 2.5vw;
+  }
+  .loginbuttonstyle {
+    padding: 1.7vw;
+    font-size: 2vw;
+  }
+  #usernamediv h1 {
+    font-size: 2.5vw;
+  }
+  #usernamediv svg {
+    height: 7vw;
+    width: 9vw;
+  }
+  #usernamediv {
+    height: 9.5vw;
+  }
+  .navbarcontent svg {
+    width: 3.7vw;
+    height: 3.7vw;
+  }
+  #homeicon {
+    width: 3.7vw;
+    height: 3.7vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 50%;
+  }
+  .navbarcontent h1 {
+    font-size: 3vw;
+  }
+  .loginbuttonstyle {
+    padding: 3vw;
+    font-size: 2.5vw;
+  }
+  #usernamediv h1 {
+    font-size: 3vw;
+  }
+  #usernamediv svg {
+    height: 9vw;
+    width: 10vw;
+  }
+  #usernamediv {
+    height: 12vw;
+  }
+  .navbarcontent svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  #homeicon {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 75%;
+  }
+  .navbarcontent h1 {
+    font-size: 4.3vw;
+  }
+  .loginbuttonstyle {
+    padding: 3.5vw;
+    font-size: 3.2vw;
+  }
+  #usernamediv h1 {
+    font-size: 4vw;
+  }
+  #usernamediv svg {
+    height: 13vw;
+    width: 15vw;
+  }
+  #usernamediv {
+    height: 16vw;
+  }
+  .navbarcontent svg {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+  #homeicon {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+}

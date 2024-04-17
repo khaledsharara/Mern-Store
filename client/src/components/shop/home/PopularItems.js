@@ -11,6 +11,7 @@ import Slider from "react-slick";
 
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Skeleton from "react-loading-skeleton";
 
 const apiURL = process.env.REACT_APP_API_URL;
 
@@ -69,10 +70,27 @@ const PopularItems = (props) => {
         <div className="w-full">
           {/* <div className="productbordersize"> */}
           <Slider {...settings}>
-            {products &&
+            {products && products.length > 0 &&
               products.map((product, index) => (
                 <Productsquare key={index } item={product} />
               ))}
+              {!products || products.length == 0 && Array(3).fill(    <div
+      data-aos="fade-up"
+      style={{
+        width: "95%",
+        position: "relative",
+        display: "inline-block",
+        marginLeft: "1.5%",
+      }}
+    >
+      <div
+        className="photodivproduct"
+      >
+        <div className="PhotoDivsmaller">
+          <Skeleton className="Photo1smaller"/>
+        </div>
+      </div>
+    </div>)}
           </Slider>
         </div>
       </div>
@@ -104,7 +122,6 @@ const Productsquare = ({ item }) => {
           <img
             src={`${item.pImages[0]}`}
             className="Photo1smaller"
-            ghdfstyut
             id="photoprop"
             onMouseOver={(e) => (e.target.src = `${item.pImages[0]}`)}
             onMouseLeave={(e) => (e.target.src = `${item.pImages[0]}`)}
